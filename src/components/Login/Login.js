@@ -23,15 +23,25 @@ function Login() {
   return (
     <div className="Login">
       <div className="login_container">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png?20220228223904"
-          alt=""
-        />
+        <img src="/images/whatsgood.png" alt="" />
         <div className="login_text">
-          <h1>Sign in to WhatsApp</h1>
+          <h1>Sign in to WhatsGood</h1>
+          <br />
+          <span>
+            This is a portfolio clone of WhatsApp Web <br /> made by{" "}
+            <a href="https://github.com/goncaloestrelado" style={{ color: "#0a8d48" }}>
+              Gonçalo Estrelado
+            </a>
+            <br />
+            <small>Built using React, Firebase, Material-UI, and Google Authentication.</small>
+          </span>
         </div>
         <Button onClick={signIn}>Sign In With Google</Button>
       </div>
+      <span className="login_disclaimer">
+        This site is a non-commercial demo project for portfolio purposes only. <br /> It uses Google Login safely and
+        does not collect or store user data. <br /> This project is not affiliated with WhatsApp.
+      </span>
     </div>
   );
 }
